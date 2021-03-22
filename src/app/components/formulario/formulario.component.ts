@@ -8,19 +8,19 @@ import { Tarea } from 'src/app/models/tarea.model';
 })
 export class FormularioComponent implements OnInit {
 
-  @Output() tareaCeada: EventEmitter<Tarea>;
+  @Output() tareaCreada: EventEmitter<Tarea>;
 
   nuevaTarea: Tarea;
 
   constructor() { 
     this.nuevaTarea = new Tarea();
-    this.tareaCeada = new EventEmitter();
+    this.tareaCreada = new EventEmitter();
   }
 
   ngOnInit(): void {
   }
   onClick(){
-    this.tareaCeada.emit(this.nuevaTarea);
+    this.tareaCreada.emit(this.nuevaTarea);
     this.nuevaTarea = new Tarea();
   }
 }

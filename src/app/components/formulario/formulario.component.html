@@ -7,7 +7,7 @@
         <label>Descripción</label>
         <input type="text" [(ngModel)] = "nuevaTarea.descripcion">
     </div>
-    <button>Enviar</button>
+    <button (click)="onClick()">Enviar</button>
 </div>
 
-{{ nuevaTarea | json }}
+<!--{{ nuevaTarea | json }}-->
