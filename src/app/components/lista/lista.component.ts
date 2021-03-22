@@ -16,5 +16,8 @@ export class ListaComponent implements OnInit {
   onClick(pTarea: Tarea){
     pTarea.completa = !pTarea.completa;
   }
+  onClickBorrar(indice){
+    this.tareas.splice(indice, 1);
+  }
 
 }
