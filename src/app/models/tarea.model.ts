@@ -2,7 +2,7 @@ export class Tarea{
 
     titulo:string;
     descripcion: string;
-    completa; boolean;
+    completa: boolean;
 
     constructor(pTitulo: string = '', pDescripcion: string = ''){
         this.titulo = pTitulo;

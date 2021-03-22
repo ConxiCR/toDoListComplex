@@ -1,0 +1,9 @@
+.fomulario{
+    padding: 20px;
+
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
