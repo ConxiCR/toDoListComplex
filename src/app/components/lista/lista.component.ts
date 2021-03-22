@@ -13,5 +13,8 @@ export class ListaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onClick(pTarea: Tarea){
+    pTarea.completa = !pTarea.completa;
+  }
 
 }
